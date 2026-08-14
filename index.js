@@ -1,6 +1,6 @@
 const express = require('express');
-require('./ai-agent-organization-memory/db/mongoose');
-const User= require('./ai-agent-organization-memory/db/model/user');
+require('./db/mongoose');
+const User= require('./db/model/user');
 const e = require('express');
 const app= express();
 
@@ -40,6 +40,7 @@ app.post('/task', (req, res)=> {
  
 
 const PORT= process.env.PORT || 3000;
+console.log("nnnnnnnnnnnnnnnnnnnnnnnnnnnnn");
 
 app.listen(PORT , ()=> {
     console.log('Server is running on port '+ PORT);
