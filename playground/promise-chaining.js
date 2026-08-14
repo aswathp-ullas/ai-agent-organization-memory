@@ -1,5 +1,5 @@
-require('../ai-agent-organization-memory/db/mongoose');
-const Task = require('../ai-agent-organization-memory/db/model/task');
+require('../db/mongoose');
+const Task = require('../db/model/task');
 
 Task.findByIdAndDelete('').then((task)=> {
     console.log(task);
@@ -9,4 +9,3 @@ Task.findByIdAndDelete('').then((task)=> {
 }).catch((e)=> {
     console.log(e);
 })
-
