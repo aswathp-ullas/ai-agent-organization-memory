@@ -43,5 +43,6 @@ const PORT= process.env.PORT || 3000;
 console.log("nnnnnnnnnnnnnnnnnnnnnnnnnnnnn");
 
 app.listen(PORT , ()=> {
+    console.log('Server is up');
     console.log('Server is running on port '+ PORT);
 })
